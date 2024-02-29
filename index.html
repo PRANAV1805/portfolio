@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#home">Experience</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <img id="dp" src="WhatsApp Image 2024-02-29 at 18.14.24_a14fde02-modified.png" alt="">
+
+    <header id="home">
+        <h2>Hola ! This is Rameswarapu Pranava Sai</h2>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="aboutme">
+            I am R.Pranava sai born on 18 sep 2005.My native is nellore.I completed my schooling at Narayana EM high school.
+            I am currently pursing my b-tech at IIT BHUBANESHWAR.I am a typical nerd and little annoying 
+        </p>
+
+    </section>
+    <section id="about">
+        <h2>Skills</h2>
+        <p class="aboutme">
+<ul>
+          <li>C Language</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Pro-Gamer</li>
+          <li>Communication</li>
+          <li>Swimming</li>
+        </ul>
+        </p>
+
+    </section>
+    <section id="about">
+        <h2>Intrests</h2>
+        <p class="aboutme">
+            <ul>
+           <li>Adventures</li>
+           <li>Photography</li>
+           <li>Cooking</li>
+           <li>Exploring</li> 
+        </ul>
+        </p>
+        <h3>Experience</h3>
+        <p>Associate at Wissenaire Fest web'd team 
+            <br>
+            Quizoc society member
+        </p>
+
+    </section>
+
+<div class="iconslist"> 
+    Contact Me: 
+<i class="bx bxl-phone-call"></i>
+  +91 6309357258
+    
+    <br>
+    <a href="https://www.instagram.com/darkknight_1805?igsh=dXdwdmNyb2dtb216" class="icons"><i class="bx bxl-instagram"></i></a>
+    <a href=" https://www.facebook.com/profile.php?id=61552340707551&mibextid=ZbWKwL" class="icons"><i class="bx bxl-facebook"></i></a>
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-bar a");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
